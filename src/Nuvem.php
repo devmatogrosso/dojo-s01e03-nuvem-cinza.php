@@ -46,7 +46,7 @@
 			$this->daysElapsed++;
 
 
-			$this->map = $mapDiaSeguinte;
+			$this->map = $nextMap;
 
 		}
 	}
