@@ -1,3 +1,5 @@
+# Dojo DevMT S01E03 
+[![Build Status](https://travis-ci.org/devmatogrosso/dojo-s01e03-nuvem-cinza.php.svg?branch=master)](https://travis-ci.org/devmatogrosso/dojo-s01e03-nuvem-cinza.php) [![Code Climate](https://codeclimate.com/github/devmatogrosso/dojo-s01e03-nuvem-cinza.php/badges/gpa.svg)](https://codeclimate.com/github/devmatogrosso/dojo-s01e03-nuvem-cinza.php) [![Test Coverage](https://codeclimate.com/github/devmatogrosso/dojo-s01e03-nuvem-cinza.php/badges/coverage.svg)](https://codeclimate.com/github/devmatogrosso/dojo-s01e03-nuvem-cinza.php/coverage)
 
 ## Data e Local
 Data: 01/08/2015
@@ -29,11 +31,11 @@ Dados um quadriculado com L linhas e C colunas, além da indicação inicial das
 
 ## Participantes 
 
- * Luan Castro 
- * Alvaro Viebrantz
- * Gabriel Pedro
- * Kenny Johnson
- * Leonardo Gregianin
+ * [Luan Castro](https://github.com/castrolol)
+ * [Alvaro Viebrantz](https://github.com/alvarowolfx)
+ * [Gabriel Pedro](https://github.com/gpedro)
+ * [Kenny Johnson](https://github.com/kennyjsa)
+ * [Leonardo Gregianin](https://github.com/leogregianin/)
 
 ## Prós 
 

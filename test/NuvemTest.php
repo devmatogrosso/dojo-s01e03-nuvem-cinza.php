@@ -2,9 +2,11 @@
 
 use App\Nuvem;
 
-class NuvemTest extends PHPUnit_Framework_TestCase {
+class NuvemTest extends PHPUnit_Framework_TestCase
+{
 
-	public function testPrimeiroDia() {
+	public function testPrimeiroDia()
+	{
 		$mapaInicio = [
 			['.', '.', '*', '.', '.', '.', '*', '*'],
 			['.', '*', '*', '.', '.', '.', '.', '.'],
@@ -33,8 +35,7 @@ class NuvemTest extends PHPUnit_Framework_TestCase {
 		$actualMap = $nuvem->getActualMap();
 
 		$this->assertEquals($mapaFinal, $actualMap);
+		$this->assertEquals(3, $nuvem->getDaysElapsed());
 	}
 
 }
-
-?>
