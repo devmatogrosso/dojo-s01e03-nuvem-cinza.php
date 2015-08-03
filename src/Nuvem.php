@@ -23,6 +23,24 @@ class Nuvem {
 		return $this->map;
 	}
 
+	public function getCoveredAirports(){
+
+		$covered = array();
+
+		foreach ($this->map as $x => $row)
+		{
+			foreach ($row as $y => $col)
+			{
+				if($col == "*" && $this->mapInitial[$x][$y] == "A"){
+					$covered[] = $this->mapInitial[$x][$y];
+				}
+			}
+		}
+
+		return $covered;
+
+	}
+	
 	public function advanceDay()
 	{
 		$nextMap = $this->map;
