@@ -32,7 +32,7 @@ class Nuvem {
 			foreach ($row as $y => $col)
 			{
 				if($col == "*" && $this->mapInitial[$x][$y] == "A"){
-					$covered[] = $this->mapInitial[$x][$y];
+					$covered[] = (object)array("x"=>$x, "y"=>$y);
 				}
 			}
 		}

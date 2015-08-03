@@ -90,5 +90,35 @@ class NuvemTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals(sizeof($airports), 2);
 
 	}
+	
+	public function testSaidaCoberturaAviao(){
+		
+		
+		$mapaInicio = [
+			['.', '.', '*', '.', '.', '.', '*', '*'],
+			['.', '*', '*', '.', '.', '.', '.', '.'],
+			['*', '*', '*', '.', 'A', '.', '.', 'A'],
+			['.', '*', '.', '.', '.', '.', '.', '.'],
+			['.', '*', '.', '.', '.', '.', 'A', '.'],
+			['.', '.', '.', 'A', '.', '.', '.', '.'],
+			['.', '.', '.', '.', '.', '.', '.', '.']
+		];
+		
+		$nuvem = new Nuvem($mapaInicio);
+
+
+		$nuvem->advanceDay();
+		$nuvem->advanceDay();
+
+		$airports = $nuvem->getCoveredAirports();
+		$this->assertEquals(sizeof($airports), 2);
+
+		$this->assertEquals($airports[0]->x, 2);
+		$this->assertEquals($airports[0]->y, 4);
+		
+		$this->assertEquals($airports[1]->x, 2);
+		$this->assertEquals($airports[1]->y, 7);
+
+	}
 
 }
